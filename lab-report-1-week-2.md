@@ -53,6 +53,18 @@
 
 
 
+* Loook Up course-specific account [here](https://sdacs.ucsd.edu/~icc/index.php)
+
+
+  * Login with your UCSD info
+  * You will have to change your password and wait about 15 minutes to let it "Activate" 
+  * Look under **Additional Accounts** to your corresponding class the grayish block is important and personal to you  
+<img src="r9.png" width="30%" height="30%">
+
+ > The last (())letters are for you specifically, don't forget it when typing in terminal @ VSCode
+  
+
+
 
 
  <h1 align="center">Trying Some Commands</h1>
