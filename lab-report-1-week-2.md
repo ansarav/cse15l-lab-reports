@@ -143,22 +143,50 @@ when trying to get access to our *remote* computer we have to enter the password
 
 > File with the ending ```.pub``` are public whereas those that don't have that are private 
 
-> So file ``` id_rsa``` contains the private  key and ```id_rsa.pub``` contains the public key which istored is ```.ssh```
 
 * On *client* computer type the following command
 
-``` ssh-keygen -t ed25519
+``` ssh-keygen ssh
 ```
 
 * Then it will ask you to enter file you can either just type "enter" or can insert the  path as in ```/Users/audri/.ssh/id_rsa.pub```
 
 * Enter passphrase of choice
+<img src="yay.png">
+
+* Extra Step for Windows users ```ssh-add``
+    * with ```ssh-add``` user private key will be stored 
+
+    * First need to change features in settings follow instruction from [StacOverflow](https://stackoverflow.com/questions/18683092/how-to-run-ssh-add-on-windows) 
+
+    * on terminal type ```ssh-add  <NameOfFileInWhichYouSavedTheKeyInPreviousStepWhenSsh-keygen>```
+
+    ![Image](added.png)
+
+> Two new files made: 
+> 1. File ``` id_rsa``` contains the private  key 
+> 2. File ```id_rsa.pub``` contains the public key which istored is ```.ssh```
 
 
-<img src="pass.png" width= "100%">
 
-* Extra Step for Windows users ```ssha-add``
-  * with ```ssh-add``` user private key will be stored 
+* Now we need *Copy* **public** key to to remote server 
+
+``` 
+ssh cse15lwi22zzz@ieng6.ucsd.edu
+<Enter Password>
+#now on server
+$ mkdir .ssh
+$ <logout>
+# back on client
+$ scp /Users/<name>/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
+# You use your username and the path you saw in the command above
+```
+![Image](---.png)
+
+
+
+
+
 
 <h1 align="center"> Optimizing Remote Running</h1>
 ### Already Centered?     
