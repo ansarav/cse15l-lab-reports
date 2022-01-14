@@ -181,8 +181,19 @@ $ <logout>
 $ scp /Users/<name>/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
 # You use your username and the path you saw in the command above
 ```
-![Image](---.png)
+![Image](FileExists.png)
 
+
+
+> $ <Logout> just means type out "exit"
+
+```scp  \Users\audri/.ssh/id_rsa.pub cs15lwi22aja@ieng6.ucsd.edu:~/.ssh/authorized_keys```
+
+``` scp <path> <username of course>:`/ .ssh/authorized_keys```
+
+![image](logout.png)
+
+> **Note:** This is important because previously it is asking you to enter server ssh and then by foing scp you are also trying to login again, so becasue you didn't exit between this steps it causes problems
 
 
 
@@ -190,6 +201,36 @@ $ scp /Users/<name>/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_k
 
 <h1 align="center"> Optimizing Remote Running</h1>
 ### Already Centered?     
+
+* Because now you can ssh and scp from clinet to server without having to halt each time by inserting password, **remote running** takes less time
+  ```$ ssh <username> "ls" ```
+  
+  ```$ ssh <username> "cd.."```
+
+  > **Maximize Space** 
+  >  You can run multiple commnads in a single line !
+  >  This compiles and runs it and identifies files
+  > ``` $ cp NameOfFile.java OtherMian.java;```
+  >  ```javac OtherMain.java;```
+  >  ```java NameOfFile.java ```
+
+
+
+  > **Shortcut**
+  > The most recent command you run will appear by clicking the Up arrow 
+  > To delete it just click the down arrow
+
+  ![Image](nopass.png)
+
+
+
+* First edit a file in you the client computer ex: ```NameOfFile.java``` 
+
+
+
+
+
+
 
 ![Image](ScreenshotForLab.png) 
 ___
