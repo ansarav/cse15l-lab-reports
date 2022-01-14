@@ -1,6 +1,6 @@
 # 👋🏾Welcome Friend!<br>
 
-
+![Gif](gifForLab.gif)
 
 
 [Lab Report 1](lab-report-1-week-2.html) <br> 
@@ -8,4 +8,3 @@
 <Resized Gif src="gifForLab.gif" width="100" height="100">
 
 
-![Gif](gifForLab.gif) 
