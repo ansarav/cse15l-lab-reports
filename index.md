@@ -1,6 +1,6 @@
 # 👋🏾Welcome Friend!<br>
 
-![Gif](gifForLab.gif) 
+![Gif](gifForLab.gif) 1[Gif]()
 
 
 [Lab Report 1](lab-report-1-week-2.html) <br> 
