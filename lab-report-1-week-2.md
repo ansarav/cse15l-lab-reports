@@ -1,7 +1,7 @@
-<h1 align="center"> <mark style="background-color: #AEE452 ; color: white; font-size: 50.1px; font-family:Courier;"> <b>  👩🏾‍💻How To Log Into a Course-Specific Account on ieng6 </b> </mark> </h1>
+<h1 align="center"> <mark style="background-color: #7fb81d ; color: white; font-size: 50.1px; font-family:Courier;"> <b>  👩🏾‍💻How To Log Into a Course-Specific Account on ieng6 </b> </mark> </h1>
 
 
-****
+
 
 <h1 align="center"> Installing VScode </h1>
  <h1 align="center"> Remotely Connecting</h1>
