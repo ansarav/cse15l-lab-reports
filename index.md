@@ -1,9 +1,5 @@
 # 👋🏾Welcome Friend!<br>
-<div style="width: 600; height: 600000">
-  
-![Gif](gifForLab.gif) 
-  
-</div>
+
 
 
 
