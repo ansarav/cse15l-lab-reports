@@ -1,4 +1,4 @@
-# <mark style="background-color: #AEE452 ; color: white; font-size: 40.1px; font-family:Courier" > 👩🏾‍💻How To Log Into a Course-Specific Account on ieng6 </mark>
+<h1 align="center"> <mark style="background-color: #AEE452 ; color: white; font-size: 50.1px; font-family:Courier;"> <b>  👩🏾‍💻How To Log Into a Course-Specific Account on ieng6 </b> </mark> </h1>
 
 
 ****
