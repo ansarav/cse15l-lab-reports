@@ -7,6 +7,7 @@
  <h1 align="center">Moving Files with scp</h1>
 <h1 align="center">Setting an SSH Key</h1>
 <h1 align="center"> Optimizing Remote Running</h1>
+## Already Centered?
 ![Image](ScreenshotForLab.png)
 ___
 > Tip: 
