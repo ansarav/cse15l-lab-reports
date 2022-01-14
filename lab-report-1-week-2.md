@@ -4,6 +4,19 @@
 
 
 <h1 align="center"> Installing VScode </h1>
+
+* Go to [Visual Code](https://code.visualstudio.com/)  
+* Click the downward arrow in the blue box and choose the operating system you have:
+  * macOS
+  * Windows
+  * Linux  
+  
+  <img src="VSC.png" width= "25%" height= "25%">
+
+
+      
+
+
  <h1 align="center"> Remotely Connecting</h1>
  <h1 align="center">Trying Some Commands</h1>
  <h1 align="center">Moving Files with scp</h1>
@@ -11,7 +24,7 @@
 <h1 align="center"> Optimizing Remote Running</h1>
 ### Already Centered?     
 
-![Image](ScreenshotForLab.png)
+![Image](ScreenshotForLab.png) 
 ___
 > Tip: 
 * 
