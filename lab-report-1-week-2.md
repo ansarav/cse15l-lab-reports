@@ -1,8 +1,8 @@
+# <mark style="background-color: white"> 👩🏾‍💻How To Log Into a Course-Specific Account on ieng6 </mark>
+****
+
 ![Image](ScreenshotForLab.png)
 ___
-# Tittle 1 <br>
-# How To Log Into a Course-Specific Account on ieng6
-****
 > Tip: 
 * 
 
