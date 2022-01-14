@@ -1,4 +1,6 @@
-# <mark style="background-color: #AEE452 "> 👩🏾‍💻How To Log Into a Course-Specific Account on ieng6 </mark>
+# <mark style="background-color: #AEE452 ; color: white; font-size: 40.1px; font-family:Courier" > 👩🏾‍💻How To Log Into a Course-Specific Account on ieng6 </mark>
+
+
 ****
 
 <h1 align="center"> Installing VScode </h1>
@@ -7,16 +9,21 @@
  <h1 align="center">Moving Files with scp</h1>
 <h1 align="center">Setting an SSH Key</h1>
 <h1 align="center"> Optimizing Remote Running</h1>
-## Already Centered?
+### Already Centered?     
+
 ![Image](ScreenshotForLab.png)
 ___
 > Tip: 
 * 
 
+
+
 * <mark>    highlihgt    </mark>
 
 <mark style="background-color: #FF0BAC ">uu me</mark>  
 <mark style="background-color: #B4F8C8 ">uu me</mark>
+
+<span style="color: white;">text</span> 
 
 * Code below
 
