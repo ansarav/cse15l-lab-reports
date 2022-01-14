@@ -1,6 +1,12 @@
 # <mark style="background-color: white"> 👩🏾‍💻How To Log Into a Course-Specific Account on ieng6 </mark>
 ****
 
+<h1 align="center"> Installing VScode </h1>
+ <h1 align="center"> Remotely Connecting</h1>
+ <h1 align="center">Trying Some Commands</h1>
+ <h1 align="center">Moving Files with scp</h1>
+<h1 align="center">Setting an SSH Key</h1>
+<h1 align="center"> Optimizing Remote Running</h1>
 ![Image](ScreenshotForLab.png)
 ___
 > Tip: 
