@@ -87,7 +87,7 @@
 > These commands help you move from one folder to the sub folder to the sub-sub folders.etc
 
   
-| <mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> *Your* Computer </mark>           |<mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> *Remote* Computer  </mark>                              |
+| <mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> **Your** Computer </mark>           |<mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> **Remote** Computer  </mark>                              |
 | ------------------------- | ------------------------------------------------ |
 |<img src="regularCPU.png" >| <img src="remote.png" width="100%" height="100%">|
 
@@ -117,7 +117,12 @@ class NameOfFile {
 
  ```
 
-* Run: ```javac``` and ```java```  
+
+
+* Run: ```javac``` and ```java```    
+
+
+
 
 <img src="20.png">
 
@@ -131,55 +136,59 @@ class NameOfFile {
 
 
 > **Note**: the start of the command is scp  s-c-p not ssh s-s-h, but it will give the same step of asking for the password.
-> p.s you just copy pasted the file from A to B computer 
+
+
+> p.s you just copy pasted the file from A to B computer . yay🎉
 
 
 * Now, go *into* **ssh** 
 ``` ssh cs15lwi22zzz@ieng6.ucsd.edu```
 * type command ``` ls  ```
 * and uuuuu there it is, the file you copied 
-* *Now* run file on *remote* computer ```javac``` and  ```java```
-> This is like accepting it and making it official on the *remote* computer
+* *Now* run file on **remote** computer ```javac``` and  ```java```
+
+> This is like accepting it and making it official on the **remote** computer
 
 <img src="run.png" width= "100%">
 
   
 
+
+
+
 <h1 align="center">Setting an SSH Key</h1>
 
-when trying to get access to our *remote* computer we have to enter the password each time. So we can use ```ssh-keygen``` to make a **public** key (on server *remote* computer) and **private** key (client, *your* computer)
+When trying to get access to our *remote* computer we have to enter the password each time. So we can use ```ssh-keygen``` to make a **public** key (on server *remote* computer) and **private** key (client, *your* computer)
 
 > File with the ending ```.pub``` are public whereas those that don't have that are private 
 
 
-* On *client* computer type the following command
+* On **client** computer type the following command: ```ssh-keygen ssh```
 
-``` ssh-keygen ssh
-```
-
-* Then it will ask you to enter file you can either just type "enter" or can insert the  path as in ```/Users/audri/.ssh/id_rsa.pub```
+* Then it will ask you to enter file. You can either just type "enter" or can insert the path as in ```/Users/audri/.ssh/id_rsa.pub```
 
 * Enter passphrase of choice
 <img src="yay.png">
 
-* Extra Step for Windows users ```ssh-add``
-    * with ```ssh-add``` user private key will be stored 
+> Extra Step for Windows users ```ssh-add``
+> * with ```ssh-add``` user private key will be stored 
+>
+>   * First need to change features in settings follow instruction from [StacOverflow](https://stackoverflow.com/questions/18683092/how-to-run-ssh-add-on-windows) 
+>
+>   * on terminal type ```ssh-add  <NameOfFileInWhichYouSavedTheKeyInPreviousStepWhenSsh-keygen>```
+>
+>   ![Image](added.png)
 
-    * First need to change features in settings follow instruction from [StacOverflow](https://stackoverflow.com/questions/18683092/how-to-run-ssh-add-on-windows) 
 
-    * on terminal type ```ssh-add  <NameOfFileInWhichYouSavedTheKeyInPreviousStepWhenSsh-keygen>```
-
-    ![Image](added.png)
-
-> Two new files made: 
-> 1. File ``` id_rsa``` contains the private  key 
-> 2. File ```id_rsa.pub``` contains the public key which istored is ```.ssh```
+Two new files made: 
+1. File ``` id_rsa``` contains the private key 
+2. File ```id_rsa.pub``` contains the public key, which is stored in the remote computer
 
 
 
 * Now we need *Copy* **public** key to to remote server 
 
-``` 
+``` java
 ssh cse15lwi22zzz@ieng6.ucsd.edu
 <Enter Password>
 #now on server
@@ -189,6 +198,7 @@ $ <logout>
 $ scp /Users/<name>/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
 # You use your username and the path you saw in the command above
 ```
+
 ![Image](FileExists.png)
 
 
@@ -197,42 +207,45 @@ $ scp /Users/<name>/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_k
 
 ```scp  \Users\audri/.ssh/id_rsa.pub cs15lwi22aja@ieng6.ucsd.edu:~/.ssh/authorized_keys```
 
+
 ``` scp <path> <username of course>:`/ .ssh/authorized_keys```
 
 ![image](logout.png)
 
-> **Note:** This is important because previously it is asking you to enter server ssh and then by foing scp you are also trying to login again, so becasue you didn't exit between this steps it causes problems
+> **Note:** This is important because previously it is asking you to enter server ssh and then by doing scp you are also trying to login again, so becasue you didn't exit between this steps it causes problems
 
 
 
 
 
 <h1 align="center"> Optimizing Remote Running</h1>
-### Already Centered?     
+    
 
-* Because now you can ssh and scp from clinet to server without having to halt each time by inserting password, **remote running** takes less time
-  ```$ ssh <username> "ls" ```
-  
-  ```$ ssh <username> "cd.."```
+* Because now you can ssh and scp from clinet to server without having to halt each time by inserting password, **remote running** takes less time  
 
-  > **Maximize Space** 
-  >  You can run multiple commnads in a single line !
-  >  This compiles and runs it and identifies files
-  > ``` $ cp NameOfFile.java OtherMian.java;```
-  >  ```javac OtherMain.java;```
-  >  ```java NameOfFile.java ```
+```$ ssh <username> "ls" ```
 
 
+ ```$ ssh <username> "cd.."```
 
-  > **Shortcut**
-  > The most recent command you run will appear by clicking the Up arrow 
-  > To delete it just click the down arrow
-
-  ![Image](nopass.png)
+> **Maximize Space** 
+>  * You can run multiple commnads in a single line🤩
+>  * This compiles and runs it and identifies files
+> ``` $ cp NameOfFile.java OtherMian.java;```
+>  ```javac OtherMain.java;```
+>  ```java NameOfFile.java ```
 
 
 
-* First edit a file in you the client computer ex: ```NameOfFile.java``` 
+> **Shortcut**
+> * The most recent command you run will appear by clicking the Up arrow 
+> * To delete it just click the down arrow
+
+![Image](nopass.png)
+
+
+
+* First edit a file in the client computer ex: ```NameOfFile.java``` 
 
 
 
@@ -241,46 +254,14 @@ $ scp /Users/<name>/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_k
 
 
 ![Image](ScreenshotForLab.png) 
-___
-> Tip: 
-* 
 
 
-
-* <mark>    highlihgt    </mark>
-
-<mark style="background-color: #FF0BAC ">uu me</mark>  
-<mark style="background-color: #B4F8C8 ">uu me</mark>
-
-<span style="color: white;">text</span> 
-
-* Code below
-
-           
-            # Hello World
-            java
-            cs
-            c++
-            hii
-yeah im out 
-        
-        hi
-
-well  
-hello
+![gif](dancing.png)
 
 
 
 
-checklist uuuu  
 
 
-
-``` javascript
- int s = 20;
-String Chicken = "Chicken Niggets";
- Array Cheese [] = new Array [10];
-
-```
 
 
