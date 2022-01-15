@@ -234,7 +234,7 @@ $ scp /Users/<name>/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_k
 
 
 > **Maximize Space** 
->  * You can run multiple commnads in a single line🤩
+>  * You can run multiple commands in a single line🤩
 >  * This compiles and runs it and identifies files
 > ``` $ cp NameOfFile.java OtherMian.java;```
 >  ```javac OtherMain.java;```
