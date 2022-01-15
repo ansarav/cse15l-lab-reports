@@ -11,11 +11,13 @@
   * Windows
   * Linux  
   
-  <img src="VSC.png" width="30%" height="30%">  
-  * open 
-  <img src= "VSC1.png" width="50%" height="50%">
+  <img src="VSC.png" >  
+  
+  <img src= "VSC1.png">
 
-* Agree with the Licence Terms   
+
+* Agree with the Licence Terms 
+
 > VScode aloows us to connect to a remote server which we will see below
 
 
@@ -24,79 +26,83 @@
 
  <h1 align="center"> Remotely Connecting</h1>
 
-<mark style="background-color: yellow">
-
-* Extra Step for Window users: We will Install Open SSH via the settings within your laptop/computer
-   * Click the windows logo at the bottom left of your screen. 
-   * Then click "Settings" it's the second to last button on the sidebar 
-
-   <img src="R1.png" width="30%" height="30%">  
-
-   * On the left side click on "Apps"
-
-   <img src="r2.png" width="30%" height="30%">
-
-   *  "Apps & Features" pops up. Click "Optional Features" 
-
-   <img src="r3.png" width="30%" height="30%">
-
-   * Install OpenSSH Client and openSSH Server
-     * First check if already installed by typing the names in "Installed Featues" 
-     * If not found, proceed to "Optional Features" and type in each feature's name one at a time. Click install 
-
-      <img src="r4.png" width="30%" height="30%">
-
-> For further information check out [this website](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
 
 
-</mark>
+> Extra Step for Window users: We will Install Open SSH via the settings within your laptop/computer:
+> * Click the windows logo at the bottom left of your screen. 
+> * Then click "Settings" it's the second to last button on the sidebar 
+>
+>   <img src="R1.png">  
+>
+>  * On the left side click on "Apps"
+>
+>  <img src="r2.png">
+>
+>  *  "Apps & Features" pops up. Click "Optional Features" 
+>
+>   <img src="r3.png">
+>
+>  * Install OpenSSH Client and openSSH Server
+>  * First check if already installed by typing the names in "Installed Featues" 
+> * If not found, proceed to "Optional Features" and type in each feature's name one at a time. Click install 
+
+> <img src="r4.png">
+
+<mark> For further information check out [this website](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) </mark>
 
 
 
 * Loook Up course-specific account [here](https://sdacs.ucsd.edu/~icc/index.php)
 
+* Login with your UCSD info
+* You will have to change your password and wait about 15 minutes to let it "Activate" 
+* Look under **Additional Accounts** to your corresponding class the grayish block is important and personal to you  
 
-  * Login with your UCSD info
-  * You will have to change your password and wait about 15 minutes to let it "Activate" 
-  * Look under **Additional Accounts** to your corresponding class the grayish block is important and personal to you  
-<img src="r9.png" width="30%" height="30%">
+<img src="r9.png">
 
- > The last **three** letters are for you specifically, don't forget it when typing in terminal @ VSCode  
+> ❗❗❗The last **three** letters are for you specifically, don't forget it when typing in terminal @ VSCode ❗❗❗ 
+
 * Open VScode and click terminal-->New Terminal  
-* In the terminal enter your course-specific account, which we found two steps ago  
-  * If it's your first time login in, it will ask you if you want to continue. In which you say yes  
-  * Type your password
-  > It will be invisible for your protection
+* In the terminal enter your course-specific account, which we found two steps ago 
 
-  <img src="r10.png" width="7000%" height="30%">
+**Note :**   
+<mark> If it's your first time login in, it will ask you if you want to continue. In which you say yes </mark> 
+
+* Type your password
+  
+> It will be invisible for your protection
 
 
+<img src="r10.png">
 
+<h1 align="center">Trying Some Commands</h1>
 
-
- <h1 align="center">Trying Some Commands</h1>
-
-* Try the following commands  on *your* computer (without being in your course-specific account) and on the *remote* computer
+* Try the following commands  on **your** computer (non course-specific account) and on the **remote** computer (yes the cse15l--- one)
  > For **remote** computer make sure you start your command with 👉🏾**ssh**👈🏾  
-  * cd ..  
-  * dir
-  * cd <file name> 
-  * exit
-  * clear
-  > These commands help you move from one folder to the sub folder to the sub-sub folders.etc
+  * ```cd ..  ```
+  * ```dir```
+  * ```cd <file name> ```
+  * ```exit```
+  * ```clear```
+> These commands help you move from one folder to the sub folder to the sub-sub folders.etc
 
   
-|*Your* Computer            | *Remote* Computer                                |
+| <mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> *Your* Computer </mark>           |<mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> *Remote* Computer  </mark>                              |
 | ------------------------- | ------------------------------------------------ |
 |<img src="regularCPU.png" >| <img src="remote.png" width="100%" height="100%">|
 
  
- <h1 align="center">Moving Files with scp</h1>
 
- > Think of it like when you need access to a picture yout took of your receipt but now you want to access that picture from another device so you email yourslef because you can log in to email anywhere with any device as long as you have the password to that device 💻
 
- * Create a file <NameOfFile.java> with the follOwing content on *your* computer (thus  ❌ieng6 , but ✅powershell on terminal):
- > to create a file you need to first open/create a folder 
+
+
+<h1 align="center">Moving Files with scp</h1>
+
+> Think of it like when you need access to a picture yout took of your receipt but now you want to access that picture from another device so you email yourselve because you can log in to email anywhere with any device as long as you have the password to that device 💻
+
+* Create a file <NameOfFile.java> with the follOwing content on **your** computer (thus❌ not ieng6, but✅powershell on terminal):  
+
+> **Note:** to create a file you need to first open/create a folder 
  
 ``` java
 
@@ -111,14 +117,16 @@ class NameOfFile {
 
  ```
 
-* Run: ```javac``` and ```java```
-<img src="20.png" width= "100%">
+* Run: ```javac``` and ```java```  
+
+<img src="20.png">
+
 
 * In same terminal type following command:
-```
-scp NameOfFile.java cs15lwi22zz@ieng6.ucsd.edu:~/
+``` scp NameOfFile.java cs15lwi22zz@ieng6.ucsd.edu:~/```
 
-```
+
+
 <img src="scp.png">
 
 
