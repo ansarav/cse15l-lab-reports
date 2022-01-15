@@ -5,7 +5,7 @@
 
 <h1 align="center"> Installing VScode </h1>
 
-* Go to [Visual Code](https://code.visualstudio.com/)  
+**Go to [Visual Code](https://code.visualstudio.com/)** 
 * Click the downward arrow in the blue box and choose the operating system you have:
   * macOS
   * Windows
@@ -28,7 +28,7 @@
 
 
 
-> Extra Step for Window users: We will Install Open SSH via the settings within your laptop/computer:
+> 🎆Extra Step for **Window** users: We will Install Open SSH via the settings within your laptop/computer:
 > * Click the windows logo at the bottom left of your screen. 
 > * Then click "Settings" it's the second to last button on the sidebar 
 >
@@ -52,7 +52,7 @@
 
 
 
-* Loook Up course-specific account [here](https://sdacs.ucsd.edu/~icc/index.php)
+**Loook Up course-specific account [here](https://sdacs.ucsd.edu/~icc/index.php)**
 
 * Login with your UCSD info
 * You will have to change your password and wait about 15 minutes to let it "Activate" 
@@ -79,12 +79,14 @@
 
 * Try the following commands  on **your** computer (non course-specific account) and on the **remote** computer (yes the cse15l--- one)
  > For **remote** computer make sure you start your command with 👉🏾**ssh**👈🏾  
-  * ```cd ..  ```
-  * ```dir```
-  * ```cd <file name> ```
-  * ```exit```
-  * ```clear```
-> These commands help you move from one folder to the sub folder to the sub-sub folders.etc
+   * ```cd ..  ```
+   * ```dir```
+   * ```cd <file name> ```
+   * ```exit```
+   * ```clear```
+   
+
+   > These commands help you move from one folder to the sub folder to the sub-sub folders.etc
 
   
 | <mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> **Your** Computer </mark>           |<mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> **Remote** Computer  </mark>                              |
@@ -170,7 +172,7 @@ When trying to get access to our *remote* computer we have to enter the password
 * Enter passphrase of choice
 <img src="yay.png">
 
-> Extra Step for Windows users ```ssh-add``
+> 🎆 Extra Step for **Windows** users ```ssh-add``
 > * with ```ssh-add``` user private key will be stored 
 >
 >   * First need to change features in settings follow instruction from [StacOverflow](https://stackoverflow.com/questions/18683092/how-to-run-ssh-add-on-windows) 
@@ -228,6 +230,9 @@ $ scp /Users/<name>/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_k
 
  ```$ ssh <username> "cd.."```
 
+* First edit a file in the client computer ex: ```NameOfFile.java``` 
+
+
 > **Maximize Space** 
 >  * You can run multiple commnads in a single line🤩
 >  * This compiles and runs it and identifies files
@@ -245,18 +250,11 @@ $ scp /Users/<name>/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_k
 
 
 
-* First edit a file in the client computer ex: ```NameOfFile.java``` 
 
 
 
 
-
-
-
-![Image](ScreenshotForLab.png) 
-
-
-![gif](dancing.png)
+![gif](dancing.gif)
 
 
 
