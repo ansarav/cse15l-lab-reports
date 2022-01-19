@@ -48,7 +48,7 @@
 
 > <img src="r4.png">
 
-<mark> For further information check out [this website](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) </mark>
+<mark> For further information check out [this website]( https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) </mark>
 
 
 
