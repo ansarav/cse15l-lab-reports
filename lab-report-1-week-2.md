@@ -223,7 +223,7 @@ $ scp /Users/<name>/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_k
 <h1 align="center"> Optimizing Remote Running</h1>
     
 
-* Because now you can ssh and scp from clinet to server without having to halt each time by inserting password, **remote running** takes less time  
+* Because now you can ssh and scp from client to server without having to halt each time by inserting password, **remote running** takes less time  
 
 ```$ ssh <username> "ls" ```
 
@@ -246,7 +246,12 @@ $ scp /Users/<name>/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_k
 > * The most recent command you run will appear by clicking the Up arrow 
 > * To delete it just click the down arrow
 
-This shortcut of using the upward arrow only requires 2 key strokes  vs 3 keystrokes if compiling and running the file in one singular  terminal line. However both of these methods of running commands are better than typing both  to compile and to run the file between two separate line and having to wait for the compile to first complete. 
+This shortcut of using the upward arrow only requires 2 key strokes  ("^" & "ENTER")  per command. Thus in a one line code to both run and compile we can use the ^ and 3 times and just edit it a lilttle bit then the ENTER key. This rather than not taking advantage of the ^ arrowhaving to take longer because you are typing character by character.  This mixture of one line code with ^ key , is ultimately better than tyoing commands to compile and to run the file between TWO separate lines and having to wait for the compile to first complete. 
+
+
+
+Comment/Question sent to grader via Github: 😀
+>Sorry, I'm still confused about the keystrokes. I understand its how many times we click or press ENTER. Can I say once we copy a file from client to server we no longer have to worry about saving the edited file each time we edit it because there is already a copy thus reducing the number of keystrokes and inputs the user types? When we type command to compile or run the most recent command is saved thus even if we are editing we can be faster at running and compiling
 
 ![Image](nopass.png)
 
