@@ -246,6 +246,8 @@ $ scp /Users/<name>/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_k
 > * The most recent command you run will appear by clicking the Up arrow 
 > * To delete it just click the down arrow
 
+This shortcut of using the upward arrow only requires 2 key strokes  vs 3 keystrokes if compiling and running the file in on terminal line. However this is better than typing both  to compile and run the file between two separate line and having to wait for the compile to first complete. 
+
 ![Image](nopass.png)
 
 
