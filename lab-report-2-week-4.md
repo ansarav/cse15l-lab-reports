@@ -20,10 +20,11 @@ if(nextOpenBracket == -1 && nextCloseBracket == -1 && openParen == -1 && closePa
 <img src="Term.png">  
 
 ## 2-3 Sentences: Relationship between ❤bug💔Symptom💖Failure Induced Input
-The symptom was that the program had an output IndexOutOfBounds Exception due to the while loop requiring atleast one index to be able to identify substring. But because we had nothing at all in the test file (Empty) this failure induced Input although simple, allows us to see that the test codes are crucial to fill an array. With this information we allow an array to be created even with 0 elements created 
+The <mark style="background-color: white ; color: black;"> Symptops </mark>   was that the program had an output IndexOutOfBounds Exception due to <mark style="background-color: white ; color: black;"> bug </mark>    in the while loop. But because we had nothing at all in the test file (Empty) this <mark style="background-color: white ; color: black;"> Failure Induced Input </mark>   although simple, allows us to see that the test codes are crucial to fill an array. With this information we allow an array to be created even with 0 elements created 
 
-
-
+<mark style="background-color: white ; color: black;"> Symptops </mark>  
+<mark style="background-color: white ; color: black;"> Bug </mark>  
+<mark style="background-color: white ; color: black;"> Failure Induced Input </mark>  
 
 <h1 align="center"> <mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> <b> Change 2: Links Missing Characters ), (, [,] </b> </mark> </h1>
 
@@ -51,7 +52,7 @@ if(nextOpenBracket == -1 || nextCloseBracket == -1 || openParen == -1 || closePa
  <img src= "fixed.png">
 
 ## 2-3 Sentences: Relationship between ❤bug💔Symptom💖Failure Induced Input
-The Failure Induced Input `[words](hmmm` pointed out that the code required the computer to consider incomplete link syntax as not an element, but there will still have to be an Array [] output at the very least. The IndexOutBoundExeption was a symptom of the bug found inside the while loop where there was only consideration for complete link syntax.
+The <mark style="background-color: white ; color: black;"> Failure Induced Input </mark> `[words](hmmm` points out that in our code, incomplete link syntax are not considered/counted as an element, but there will still have to be an Array [] output at the very least. The IndexOutBoundExeption was a <mark style="background-color: white ; color: black;"> symptops </mark>  of the <mark style="background-color: white ; color: black;"> bug </mark>   found inside the while loop where there was only consideration for complete link syntax.
 
 
 <h1 align="center"> <mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> <b> Change 3: Only adding Links that are "valid" </b> </mark> </h1>
@@ -71,4 +72,4 @@ The Failure Induced Input `[words](hmmm` pointed out that the code required the 
 
 ## 2-3 Sentences: Relationship between ❤bug💔Symptom💖Failure Induced Input
 
-> My fault for coding "==" instead of ".equal" when checking the if condition of the link having "NotYet" inside the bracket, was the bug. This bug was made aware to us by the Symptom of not providing the correct output( the body of the if statement did not work despite meeting the condition). The failure Induced Input was ```[NotYet]( DoNotAddThisLink.com)``` the code failed, we knew th bug was near the most recently edited portions. 
+My fault for coding "==" instead of ".equal" when checking if's condition when the link has "NotYet" inside the bracket, was the bug. This <mark style="background-color: white ; color: black;"> bug </mark>   was made aware to us by the <mark style="background-color: white ; color: black;"> symptom </mark>  of not providing the correct output( the body of the if statement did not work despite meeting the condition). The <mark style="background-color: white ; color: black;"> failure Induced Input </mark>   was ```[NotYet]( DoNotAddThisLink.com)``` the code failed, we knew th bug was near the most recently edited portions. 
