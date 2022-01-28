@@ -246,7 +246,7 @@ $ scp /Users/<name>/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_k
 > * The most recent command you run will appear by clicking the Up arrow 
 > * To delete it just click the down arrow
 
-This shortcut of using the upward arrow only requires 2 key strokes  ("^" & "ENTER")  per command. Thus in a one line code to both run and compile we can use the ^ and 3 times and just edit it a lilttle bit then the ENTER key. This rather than not taking advantage of the ^ arrowhaving to take longer because you are typing character by character.  This mixture of one line code with ^ key , is ultimately better than tyoing commands to compile and to run the file between TWO separate lines and having to wait for the compile to first complete. 
+This shortcut of using the upward arrow only requires 2 key strokes  ("^" & "ENTER")  per command, assuming we already have the command stored on th remote server. Thus in a one line code to both run and compile we can use the ^ and 3 times and just edit it a lilttle bit then the ENTER key. This rather than not taking advantage of the ^ arrowhaving to take longer because you are typing character by character.  This mixture of one line code with ^ key , is ultimately better than tyoing commands to compile and to run the file between TWO separate lines and having to wait for the compile to first complete. 
 
 
 
