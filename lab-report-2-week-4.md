@@ -72,3 +72,5 @@ The <mark style="background-color: white ; color: black;"> Failure Induced Input
 ## 2-3 Sentences: Relationship between ❤bug💔Symptom💖Failure Induced Input
 
 My fault for coding "==" instead of ".equal" when checking if's condition when the link has "NotYet" inside the bracket, was the bug. This <mark style="background-color: white ; color: black;"> bug </mark>led to the<mark style="background-color: white ; color: black;"> symptom </mark>of it not giving the correct output( the body of the if statement did not work despite meeting the condition). The <mark style="background-color: white ; color: black;"> failure Induced Input </mark>   was ```[NotYet]( DoNotAddThisLink.com)``` the code failed, we knew the bug was near the most recently edited portions. 
+
+![gif](Lab2yay.gif)
