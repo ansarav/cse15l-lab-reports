@@ -1,17 +1,26 @@
 <h1 align="center"> <mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> <b> Change 1: Empty Array showing up us Empty [] </b> </mark> </h1>
 
 ## 📸Picture of code change: 
- <img src="r3.png">  
+<img src="&.png">  
+I forgot to save take a picture of when I commited the change at the beginning but the change was adding 
+
+```
+
+if(nextOpenBracket == -1 && nextCloseBracket == -1 && openParen == -1 && closeParen == -1){
+     return toReturn;
+}   
+```
+ 
  
 ## 🔗Link to Test file for *failure-inducing input* 
 [Test File: Empty Array](https://github.com/ansarav/markdown-parse/blob/8e4f3b942398ade970ef879c25437bec2c30cc13/Empty-test-file.md)
 
 
 ## 🤪Symptom (*commit history/ terminal* )
-
+<img src="Term.png">  
 
 ## 2-3 Sentences: Relationship between ❤bug💔Symptom💖Failure Induced Input
-
+The symptom of was that the program had an outpu to IndexOutOfBounds Exception due to the while loop requiring atleast one index to be able to identify substring. But because we had nothing at all in the tst file (Empty) this failure induced Input although simply allows us to see that the test codes are crucial to fill an array. With this information we allow an array even if with o elements to be created
 
 
 
@@ -20,17 +29,29 @@
 
 
 ## 📸Picture of code change: 
- <img src="r3.png">  
+<img src = "or.png">
+
+```
+if(nextOpenBracket == -1 || nextCloseBracket == -1 || openParen == -1 || closeParen == -1){
+                return toReturn;
+            } 
+```
  
 ## 🔗Link to Test file for *failure-inducing input* 
-[Link](https://www.example.com)
+[Test File: MissingChar ")"](https://github.com/ansarav/markdown-parse/blob/9d11a96f9f99001a15a5191b1ca093210a74b74a/MissingChar-test-file.md)
 
 
 ## 🤪Symptom (*commit history/ terminal* )
+ <img src="Lefalta.png">  
+ 
 
+ vs Fixed👇🏾
+
+
+ <img src= "fixed.png">
 
 ## 2-3 Sentences: Relationship between ❤bug💔Symptom💖Failure Induced Input
-
+The Failure Induced Input `[words](hmmm` pointed out that the code requiredthe computer to consider incomplete link syntax as not an element, but there will still have to be an Array [] output at the very least. The IndexOutBoundExeption was a symptom of the bug found inside the while loop where there was only consideration for complete link syntax, so because its a while loop it would not be able to move to the next potential link syntax. 
 
 
 <h1 align="center"> <mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> <b> Change 3: Only adding Links that are "valid" </b> </mark> </h1>
