@@ -15,4 +15,4 @@ Lab report below :D
 
 [Lab report 3](lab-report-3-week-6.html) <br>
 
-[Lab report 4](lab-report-4-week-7.html)  
+[Lab report 4](lab-report-4-week-8.html)  
