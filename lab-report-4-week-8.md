@@ -31,22 +31,22 @@
 
  * Test 1: 
    
-    > Show code in MarkdownParseTest.java for how you turned it into a __test__
+## Show code in MarkdownParseTest.java for how you turned it into a __test__
 
-    ![image](AT.png)
+![image](AT.png)
 
-    > Corresponding __output__: not passed
-    ![image](AF.png)
+## Corresponding __output__: not passed
+![image](AF.png)
 
     
     
  * Test 2: Implementation  reviewed week 7
 
-    > Show code in MarkdownParseTest.java for how you turned it into a __test__
-   ![image](JT.png)
+##  Show code in MarkdownParseTest.java for how you turned it into a __test__
+![image](JT.png)
 
-    > Corresponding __output__: not passed
-   ![image](JF.png)
+## Corresponding __output__: not passed
+![image](JF.png)
     
  <h1 align="center"> Snippet 2 </h1>
 
@@ -65,22 +65,22 @@
 
   * Test 3: 
    
-    > Show code in MarkdownParseTest.java for how you turned it into a __test__
+## Show code in MarkdownParseTest.java for how you turned it into a __test__
+![image](CT.png)
 
-    ![image](CT.png)
+## Corresponding __output__: not passed  
 
-    > Corresponding __output__: not passed
-    ![image](CF.png)
+![image](CF.png)
 
     
     
  * Test 4: Implementation  reviewed week 7
 
-    > Show code in MarkdownParseTest.java for how you turned it into a __test__
-   ![image](KT.png)
+## Show code in MarkdownParseTest.java for how you turned it into a __test__
+![image](KT.png)
 
-    > Corresponding __output__: not passed
-   ![image](KF.png) 
+## Corresponding __output__: not passed
+![image](KF.png) 
  
  <h1 align="center"> Snippet 3 </h1>
 
@@ -119,22 +119,21 @@ And then there's more text
 
   * Test 5: 
    
-    > Show code in MarkdownParseTest.java for how you turned it into a __test__
+## Show code in MarkdownParseTest.java for how you turned it into a __test__
+![image](ET.png)
 
-    ![image](ET.png)
-
-    > Corresponding __output__: not passed
-    ![image](EF.png)
+## Corresponding __output__: not passed
+![image](EF.png)
 
     
     
  * Test 6: Implementation  reviewed week 7
 
-    > Show code in MarkdownParseTest.java for how you turned it into a __test__
-   ![image](LT.png)
+## Show code in MarkdownParseTest.java for how you turned it into a __test__
+![image](LT.png)
 
-    > Corresponding __output__: not passed
-   ![image](LF.png)
+## Corresponding __output__: not passed
+![image](LF.png)
 
 
 <h1 align="center">Questions </h1>
