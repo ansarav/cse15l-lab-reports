@@ -1,4 +1,4 @@
-<h1 align="center"> <mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> <b>  Adding Tests</b> </mark> </h1>
+<h1 align="center"> <mark style="background-color: #7fb81d ; color: white; font-size: 30px; font-family:Courier;"> <b>.                              .               .               Adding Tests               .               .                              .</b> </mark> </h1>
  
  ![image](UC.gif)
 
@@ -23,25 +23,31 @@
 
 [`code]`](ucsd.edu)
  ```
-
- * Test 1: 
-    >  It *should* produce:  
+  >  It *should* produce:  
     ```google.com```  
     ```google.com```  
     ```ucsd.edu ```
 
-    > Show code in MarkdownParseTest.java for how you turned it into a test
-    
 
-    > Corresponding output: not passed
-    ![image](week101.png)
+ * Test 1: 
+   
+    > Show code in MarkdownParseTest.java for how you turned it into a __test__
+
+    ![image](AT.png)
+
+    > Corresponding __output__: not passed
+    ![image](AF.png)
 
     
     
  * Test 2: Implementation  reviewed week 7
 
+    > Show code in MarkdownParseTest.java for how you turned it into a __test__
+   ![image](BT.png)
 
- 
+    > Corresponding __output__: not passed
+   ![image](BF.png)
+    
  <h1 align="center"> Snippet 2 </h1>
 
  ```
@@ -53,30 +59,24 @@
  ```
 
 
- * Test 3: Implementation of markdown-parse
-    * clone + edits ?
-    * Run test & result of running
+  * Test 3: 
+   
+    > Show code in MarkdownParseTest.java for how you turned it into a __test__
 
+    ![image](CT.png)
 
+    > Corresponding __output__: not passed
+    ![image](CF.png)
 
-
-    >  It *should* produce:  "insert here" via: choose VsCode preview or   
-
-    > Show code in MarkdownParseTest.java for how you turned it into a test
-
-    > Corresponding output: passed/ no passed( show specififc part jUnit output shows tet failure)  
+    
     
  * Test 4: Implementation  reviewed week 7
-    * clone + edits ?
-    * Run test & result of running
 
+    > Show code in MarkdownParseTest.java for how you turned it into a __test__
+   ![image](DT.png)
 
-
-    >  It *should* produce:  "insert here" via: choose VsCode preview or   
-
-    > Show code in MarkdownParseTest.java for how you turned it into a test
-
-    > Corresponding output: passed/ no passed( show specififc part jUnit output shows tet failure)  
+    > Corresponding __output__: not passed
+   ![image](DF.png) 
  
  <h1 align="center"> Snippet 3 </h1>
 
@@ -110,31 +110,24 @@ And then there's more text
 
 
 
- * Test 5: Implementation of markdown-parse
+  * Test 5: 
+   
+    > Show code in MarkdownParseTest.java for how you turned it into a __test__
 
-    * clone + edits ?
-    * Run test & result of running
+    ![image](ET.png)
+
+    > Corresponding __output__: not passed
+    ![image](EF.png)
+
     
-
-    >  It *should* produce:  "insert here" via: choose VsCode preview or demo site  
-
-    > Show code in 
-    MarkdownParseTest.java for how you turned it into a test
-
-    > Corresponding output: passed/ no passed( show specififc part jUnit output shows tet failure)  
-
-
-
+    
  * Test 6: Implementation  reviewed week 7
-    * clone + edits?
-    * Run test & result of running
 
+    > Show code in MarkdownParseTest.java for how you turned it into a __test__
+   ![image](FT.png)
 
-    >  It *should* produce:  "insert here" via: choose VsCode preview or   
-
-    > Show code in MarkdownParseTest.java for how you turned it into a test
-
-    > Corresponding output: passed/ no passed( show specififc part jUnit output shows tet failure)  
+    > Corresponding __output__: not passed
+   ![image](FF.png)
 
 
 <h1 align="center">Questions </h1>
