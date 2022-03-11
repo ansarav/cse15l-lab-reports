@@ -24,7 +24,7 @@
 [`code]`](ucsd.edu)
  ```
   >  It *should* produce:  
-    ```google.com```  
+    ``` 'google.com```  
     ```google.com```  
     ```ucsd.edu ```
 
@@ -43,10 +43,10 @@
  * Test 2: Implementation  reviewed week 7
 
     > Show code in MarkdownParseTest.java for how you turned it into a __test__
-   ![image](BT.png)
+   ![image](JT.png)
 
     > Corresponding __output__: not passed
-   ![image](BF.png)
+   ![image](JF.png)
     
  <h1 align="center"> Snippet 2 </h1>
 
@@ -57,6 +57,10 @@
 
 [some escaped \[ brackets \]](example.com)
  ```
+ >  It *should* produce:  
+    ```a.com, a.com(())```  
+    ```example.com```  
+
 
 
   * Test 3: 
@@ -73,10 +77,10 @@
  * Test 4: Implementation  reviewed week 7
 
     > Show code in MarkdownParseTest.java for how you turned it into a __test__
-   ![image](DT.png)
+   ![image](KT.png)
 
     > Corresponding __output__: not passed
-   ![image](DF.png) 
+   ![image](KF.png) 
  
  <h1 align="center"> Snippet 3 </h1>
 
@@ -108,7 +112,10 @@ And there's still some more text after that.
 And then there's more text
  ```
 
-
+ >  It *should* produce:  
+    ```https://www.twitter.com```  
+    ```https://ucsd-cse15l-w22.github.io/```  
+    ```https://cse.ucsd.edu/```
 
   * Test 5: 
    
@@ -124,25 +131,25 @@ And then there's more text
  * Test 6: Implementation  reviewed week 7
 
     > Show code in MarkdownParseTest.java for how you turned it into a __test__
-   ![image](FT.png)
+   ![image](LT.png)
 
     > Corresponding __output__: not passed
-   ![image](FF.png)
+   ![image](LF.png)
 
 
 <h1 align="center">Questions </h1>
 
 ### 1) Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
 
->  Ans: 
+>  Ans:  Yup because the problem/ bug here is that it looking for the first character to be  an open bracket, but ther would be cases sucha s the first line in snippet 1 where ther can be other character before the open bracket. So distinguishing an open bracket as the start of the potential link should be more spcific such as when the the open bracket has a space before it. This will just take fewer than 10 lines. If anything we can add an if statment such as if "[" has a character attached to the front of it, exit the commands of adressing it as a link.
 
 
 
 
 ### 2)Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.
 
-> Ans: 
+> Ans: I think this one will take more than 10 lines because we need to add a Counter as in like an instance variable where the code is able to match chracters to their even number of appearance based on its update number. So when x =2 or x=6 it will count the characters within as part of the bracket unit or paranthesis unit. As in () and (()) is a pair within a pair and (( ) or ( )) will only consider what is inside the most outer and inner paranthesis  and brackets as part of that ONE pair. 
 
 ### 3) Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
 
-> Ans: 
+> Ans: I think this will take less than 10 lines of code because it will just need to recognize to current condition to the character after the newline and thus continue its search for it's matching closed parenthsis or closed bracket depending with respect to the unmatched "(" or "[" the test file has. It's just moveing the or updating the current index or "recursor". 
