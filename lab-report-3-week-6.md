@@ -5,7 +5,9 @@
 # 🎇Start: Copying Whole Markdown-parse Directory to Your ieng6 Account
  ![image](F1.png)
 
-After ``scp -r.`` goes the location of where you want to copy directory and afterwards is what directory you want to copy. SO the name of the direcotry will do. the  period is specifically for the code to recognize you are trying to copy a directory
+After ``scp -r.`` goes the location of where you want to copy directory and afterwards is what directory you want to copy. SO the name of the direcotry will do. the  period is specifically for the code to recognize you are trying to copy a dire
+
+ctory
 
 
 # 🎇Next: Logging into your ieng6 account & compiling and running the tests for your repository 
